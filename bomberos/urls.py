@@ -28,7 +28,7 @@ from django.urls import path
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^galeria/',include('galeria.urls')),
-    url(r'^', include('galeria.urls')),
+   # url(r'^galeria/',include('galeria.urls')),
+    url(r'^', include('galeria.urls', namespace="galeria")),
 
 ]
