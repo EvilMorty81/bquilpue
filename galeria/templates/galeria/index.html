@@ -22,7 +22,7 @@
 </head>
 
 <body>
-
+	
 	<header>
 		<div>
 		<h1>1 COMPAÑÍA DE BOMBEROS DE QUILPUÉ</h1>
@@ -30,17 +30,17 @@
 		<div class="menu_bar">
 			<a href="#" class="bt-menu"><span class="icon-menu"></span>Menú</a>
 		</div>
- 
+		
 		<nav>
 			<ul>
-				<li><a href="index.html"><span class="icon-home"></span>Inicio</a></li>
+				<li><a href="#"><span class="icon-home"></span>Inicio</a></li>
 				<li class="submenu">
 					<a href="#"><span class="icon-user"></span>Acerca de Nosotros<span class="caret icon-circle-down"></span></a>
 					<ul class="children">
 						<li><a href="#">Quiénes Somos <span class="icon-dot"></span></a></li>
 						<li><a href="#">Historia<span class="icon-dot"></span></a></li>
 						<li><a href="#">Comunidad<span class="icon-dot"></span></a></li>
-						<li><a href="{% url 'galeria:galeria' %]}">Galeria<span class="icon-dot"></span></a></li>
+						<li><a href="#">Galeria<span class="icon-dot"></span></a></li>
 					</ul>
 				</li>
 
@@ -56,21 +56,23 @@
 					 <ul class="children">
 						<li><a href="#">Emergencias<span class="icon-dot"></span></a></li>
 						<li><a href="#">Consejos<span class="icon-dot"></span></a></li>
-						<li><a href="../html/galeria.html">Fotos<span class="icon-dot"></span></a></li>
+						<li><a href="#">Fotos<span class="icon-dot"></span></a></li>
 					</ul>
 				</li>
 				<li class="submenu">
 					<a href="#"><span class="icon-file-text2"></span>Postulaciones<span class="caret icon-circle-down"></span></a>
 					<ul class="children">
 						<li><a href="#">Fechas de Postulación<span class="icon-dot"></span></a></li>
-						<li><a href="../html/formulario.html">Formulario de Postulación<span class="icon-dot"></span></a></li>
-						<li><a href="#">Resultados<span class="icon-dot"></span></a></li>
+						<li><a href="#">Formulario de Postulación<span class="icon-dot"></span></a></li>
+						<li><a href="{% url 'galeria:formulario'%}">Resultados<span class="icon-dot"></span></a></li>
 					</ul>
 				</li>
 				<li><a href="#"><span class="icon-mobile"></span>Contacto</a></li>
 			</ul>
 		</nav>
+		
 	</header>
+	
 
 	<div class="slide" id="carrusel">
 		<div><img src="/static/img/bombero.jpg"></div>
@@ -115,7 +117,7 @@
 	<br>
 	<br>
 	<br>
-	<h1><a href="../html/galeria.html">Galeria </a></h1>
+	<h1><a href="#">Galeria </a></h1>
 	<body>
 		<section class="galeria">
 			<section class="container">
