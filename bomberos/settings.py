@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'galeria.apps.GaleriaConfig',
+    'usuario.apps.UsuarioConfig',
     #'galeria',
 ]
 
@@ -57,6 +58,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR, 'templates')], #esto puede estar vacio
+        #'DIRS': ['templates'], #esto puede estar vacio
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
