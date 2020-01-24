@@ -26,7 +26,17 @@
 	<header>
 		<div>
 		<h1>1 COMPAÑÍA DE BOMBEROS DE QUILPUÉ</h1>
-	    </div>
+		</div>
+		<nav>
+			<ul>
+				<li>
+					<form class="logout-link" action="{% url 'accounts:logout' %}" method="post">
+						{% csrf_token %}
+						<button type="submit">Logout</button>
+					</form>
+				</li>
+			</ul>
+		</nav>
 		<div class="menu_bar">
 			<a href="#" class="bt-menu"><span class="icon-menu"></span>Menú</a>
 		</div>
