@@ -10,6 +10,7 @@ app_name='galeria'
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('create/', views.galeria_create, name='create'),
     path('galeria/', views.galeria, name='galeria'),
     path('formulario/', views.formulario, name='formulario')
 ]
@@ -18,6 +19,7 @@ urlpatterns = [
 
 """urlpatterns = [
     url(r'^$', 'index', name='index'),
+    url(r'^create/$', views.galeria_create, name="create"),
     url(r'^index/',views.index, name='index'),
     url(r'^galeria/',views.galeria, name='galeria'),
     url(r'^formulario/',views.formulario, name='formulario'),

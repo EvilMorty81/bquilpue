@@ -3,6 +3,7 @@ from django.utils import timezone
 from .models import Post
 from django.shortcuts import redirect
 from django.http import HttpResponse
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 """def post_list(request):
@@ -16,3 +17,7 @@ def galeria(request):
 
 def formulario(request):
     return render(request, 'galeria/formulario.html')
+
+@login_required(login_url="/login/")
+def galeria_create(request):
+    return render(request, 'galeria/galeria_create.html')
