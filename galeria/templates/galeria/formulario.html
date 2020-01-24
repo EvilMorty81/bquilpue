@@ -71,6 +71,19 @@
 						<li><a href="#">Resultados<span class="icon-dot"></span></a></li>
 					</ul>
 				</li>
+				<li class="submenu">
+					<a href="#"><span class="icon-user"></span>Acceso Sistema<span class="caret icon-circle-down"></span></a>
+					<ul class="children">
+						<li><a href="{% url 'accounts:signup' %}">Registrate<span class="icon-dot"></span></a></li>
+						<li><a href="{% url 'accounts:login' %}">Ingresa<span class="icon-dot"></span></a></li>
+						<li>
+							<form class="logout-link" action="{% url 'accounts:logout' %}" method="post">
+								{% csrf_token %}
+								<button type="submit">Logout</button>
+							</form>
+						</li>
+					</ul>
+				</li>
 				<li><a href="#"><span class="icon-mobile"></span>Contacto</a></li>
 			</ul>
 		</nav>
