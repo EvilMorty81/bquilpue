@@ -20,6 +20,7 @@ from django.conf.urls.static import static
 from django.contrib.auth import views as auth_views
 from django.conf.urls import include, url
 from django.urls import path
+#from django.contrib.auth.views import login, password_reset, password_reset_done, password_reset_confirm, password_reset_complete #en caso de persistir el error comentar esta linea
 
 """urlpatterns = [
     path('admin/', admin.site.urls),
@@ -32,5 +33,5 @@ urlpatterns = [
    # url(r'^galeria/',include('galeria.urls')),
     url(r'^', include('galeria.urls', namespace="galeria")),
     url(r'^', include('accounts.urls', namespace="accounts")),
-
+    #url(r'^reset/password_reset', password_reset, {template_name})
 ]
