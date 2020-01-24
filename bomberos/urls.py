@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.conf import settings
 from django.views.static import serve
 from django.conf.urls.static import static
+from django.contrib.auth import views as auth_views
 from django.conf.urls import include, url
 from django.urls import path
 
@@ -30,5 +31,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
    # url(r'^galeria/',include('galeria.urls')),
     url(r'^', include('galeria.urls', namespace="galeria")),
+    url(r'^', include('accounts.urls', namespace="accounts")),
 
 ]
